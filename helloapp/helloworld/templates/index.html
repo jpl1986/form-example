@@ -7,6 +7,14 @@
     </head>
     <body>
         <h1>Hello World! I am Learning Django!</h1>
+       <form action="{% url 'helloworld:yourname'%}" method="POST" class="post-form">
+         {% csrf_token %}
+         {{ form.as_p }}
+         <!--This will be substituted with Django tags for the form to be rendered-->
+         <!--<label for="your_name">Your name: </label>
+         <input id="your_name" type="text" name="your_name" value="{{ current_name }}">-->
+         <input type="submit" value="Submit"/>
+       </form>
      <a href="/about/">About Me</a>
     </body>
 </html>

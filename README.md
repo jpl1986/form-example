@@ -1,1 +1,1 @@
-A Helloworld website made with Django from the basic tutorial.
+A Helloworld website made with Django containing a basic form.
